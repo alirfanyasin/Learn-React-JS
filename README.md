@@ -72,3 +72,8 @@ npm run dev
 - Custom Hooks
 - Dynamic Routing
 - Redux - State Managament
+- Redux Toolkit
+- Implementasi React Redux
+- UseContext
+- UseReducer
+- Next Lesson (recomended next.js)
