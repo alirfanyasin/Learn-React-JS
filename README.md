@@ -47,8 +47,33 @@ Masuk ke file `./src/index.css` dan tambahkan kode di bawah ini
 @tailwind utilities;
 ```
 
-
 Jalankan projectnya
 ```sh
 npm run dev
 ```
+
+
+## Lesson 
+- Setup Project
+- Component & Props
+- Atonomic Design
+- React Router
+- Conditional Rendering
+- Nested Component
+- Rendering Lists
+- Event Handler
+- State
+- UseState
+- Lifecycle
+- UseEffect
+- UseRef
+- Get Data API
+- Post Data API
+- Custom Hooks
+- Dynamic Routing
+- Redux - State Managament
+- Redux Toolkit
+- Implementasi React Redux
+- UseContext
+- UseReducer
+- Next Lesson (recomended next.js)
