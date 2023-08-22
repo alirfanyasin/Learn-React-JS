@@ -77,3 +77,6 @@ npm run dev
 - UseContext
 - UseReducer
 - Next Lesson (recomended next.js)
+
+## Author
+[Irfan Yasin](https://github.com/alirfanyasin)
