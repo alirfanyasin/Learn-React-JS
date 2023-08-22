@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AuthLayouts = ({ title, children }) => {
   return (
@@ -10,6 +11,25 @@ const AuthLayouts = ({ title, children }) => {
         </p>
 
         {children}
+
+        {/* Conditional Rendering */}
+        {title === "Login" && (
+          <p className="my-3 text-center">
+            Don't have an accout?{" "}
+            <Link to="/register" className="font-semibold text-blue-700">
+              Register
+            </Link>
+          </p>
+        )}
+
+        {title === "Register" && (
+          <p className="my-3 text-center">
+            Already have an accout?{" "}
+            <Link to="/login" className="font-semibold text-blue-700">
+              Login
+            </Link>
+          </p>
+        )}
       </div>
     </div>
   );

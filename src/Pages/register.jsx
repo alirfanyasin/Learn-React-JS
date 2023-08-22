@@ -6,12 +6,6 @@ const RegisterPage = () => {
   return (
     <AuthLayouts title="Register">
       <FormRegister />
-      <p className="my-3 text-center">
-        Already your have an accout?{" "}
-        <Link to="/login" className="font-semibold text-blue-700">
-          Login
-        </Link>
-      </p>
     </AuthLayouts>
   );
 };
