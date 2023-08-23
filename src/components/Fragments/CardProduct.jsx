@@ -2,7 +2,7 @@ import Button from "../Elements/Button/Index";
 
 const CardProduct = ({ children }) => {
   return (
-    <div className="w-full max-w-sm p-8 mx-2 rounded-lg shadow bg-gradient-to-tr from-sky-700 to-blue-900">
+    <div className="flex flex-col justify-between w-full max-w-sm p-8 mx-2 rounded-lg shadow bg-gradient-to-tr from-sky-700 to-blue-900">
       {children}
     </div>
   );
@@ -14,7 +14,7 @@ const Header = ({ image }) => {
 
 const Body = ({ title, children }) => {
   return (
-    <div className="mt-5 text-white">
+    <div className="h-full mt-5 text-white">
       <h2 className="text-2xl font-semibold">{title}</h2>
       <p className="mt-3">{children}</p>
     </div>
