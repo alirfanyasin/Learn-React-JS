@@ -25,7 +25,7 @@ const Footer = ({ price }) => {
   return (
     <div className="flex items-center justify-between mt-5">
       <span className="text-2xl font-semibold text-white">Rp. {price}</span>
-      <Button classname="text-blue-900 bg-white hover:bg-slate-200">
+      <Button classname="text-black bg-white hover:bg-slate-200">
         Add to Cart
       </Button>
     </div>
