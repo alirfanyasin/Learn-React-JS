@@ -2,7 +2,7 @@ import Button from "../Elements/Button/Index";
 
 const CardProduct = ({ children }) => {
   return (
-    <div className="flex flex-col justify-between w-full max-w-sm p-8 mx-2 rounded-lg shadow bg-gradient-to-tr from-sky-700 to-blue-900">
+    <div className="flex flex-col justify-between w-full max-w-xs p-8 mx-2 mb-4 rounded-lg shadow bg-gradient-to-tr from-sky-700 to-blue-900">
       {children}
     </div>
   );
@@ -21,11 +21,20 @@ const Body = ({ title, children }) => {
   );
 };
 
-const Footer = ({ price }) => {
+const Footer = ({ price, addToCart, id }) => {
   return (
     <div className="flex items-center justify-between mt-5">
-      <span className="text-2xl font-semibold text-white">Rp. {price}</span>
-      <Button classname="text-black bg-white hover:bg-slate-200">
+      <span className="font-semibold text-white text-md">
+        Rp.{" "}
+        {price.toLocaleString("id-ID", {
+          styles: "currency",
+          currency: "IDR",
+        })}
+      </span>
+      <Button
+        classname="text-blue-900 bg-white hover:bg-slate-200"
+        onclick={() => addToCart(id)}
+      >
         Add to Cart
       </Button>
     </div>
